@@ -3,6 +3,19 @@
 require_once("config.php");
 
 /*
+
+Atualizando um usuario
+
+*/
+
+$user = new Usuario();
+
+$user->loadById(5);
+
+$user->update("Professor","Senha123");
+echo $user;
+
+/*
 Inserir usuario usando a class __construct
 
 $user = new Usuario("Teste2", "abcd");
