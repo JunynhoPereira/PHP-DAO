@@ -3,6 +3,28 @@
 require_once("config.php");
 
 /*
+Inserir usuario usando a class __construct
+
+$user = new Usuario("Teste2", "abcd");
+$user->insert();
+echo $user;
+
+*/
+
+/*
+
+Inserir usuario de forma manual usando class insert
+
+$user = new Usuario();
+
+$user->setDeslogin("Teste");
+$user->setDessenha("!@#$%");
+$user->insert();
+echo $user;
+
+*/
+
+/*
 
 Buscar usuario usando o login e senha corretos
 
